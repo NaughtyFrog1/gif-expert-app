@@ -5,3 +5,8 @@
 body {
   padding: 5%;
 }
+
+input[type='text'] {
+  font-size: 1.3rem;
+  width: 100%;
+}

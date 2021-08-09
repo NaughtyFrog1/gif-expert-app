@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AddCategory } from './components/AddCategory'
 
 const GifExpertApp = () => {
   const [categories, setCategories] = useState([
@@ -7,16 +8,11 @@ const GifExpertApp = () => {
     'Dragon Ball',
   ])
 
-  const handleAdd = () => {
-    setCategories([...categories, 'Hunter X Hunter'])
-  }
-
   return (
     <>
       <h2>GifExpertApp</h2>
+      <AddCategory setCategories={setCategories} />
       <hr />
-
-      <button onClick={handleAdd}>Agregar</button>
 
       <ol>
         {categories.map((category) => (
@@ -31,6 +27,5 @@ export default GifExpertApp
 
 /**
  * Cada elemento en una lista debe tener una "key" prop única.
- *
  * Se recomienda que esta "key" no sea el índice del elemento, ya que si se modifica el array pueden producirse errores
  */
