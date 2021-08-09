@@ -3,7 +3,8 @@
 }
 
 body {
-  padding: 5%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 input[type='text'] {
@@ -11,12 +12,27 @@ input[type='text'] {
   width: 100%;
 }
 
-.card {
-  align-items: center;
-  justify-content: center;
-  border: 1px solid grey;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  overflow: hidden;
+.category {
+  h3 {
+    margin: 36px 0 0 0;
+  }
+}
+
+.gif-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gif-cards__card {
+  display: flex;
+  list-style: none;
+  padding: 0 4px;
+  height: 200px;
+  margin-top: 8px;
+  vertical-align: middle;
+  
+  img {
+    height: 100%;
+  }
 }

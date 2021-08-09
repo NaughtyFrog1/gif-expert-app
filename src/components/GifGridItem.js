@@ -2,7 +2,7 @@ import React from 'react'
 
 const GifGridItem = ({id, title, url}) => {
   return (
-    <li className="card">
+    <li className="gif-cards__card">
       <img src={url} alt={title} />
     </li>
   )
