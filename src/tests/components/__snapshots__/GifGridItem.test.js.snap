@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests for GifGridItem should render the component properly 1`] = `
+<li
+  className="gif-cards__card animate__animated animate__fadeInUp"
+>
+  <img
+    alt="Este es el título"
+    src="https://esta/url/no/existe.com"
+  />
+</li>
+`;
