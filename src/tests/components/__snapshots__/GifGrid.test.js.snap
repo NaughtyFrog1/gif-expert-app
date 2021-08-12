@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for GifGrid should render the component properly 1`] = `
+<div
+  className="category"
+>
+  <h3>
+    The office
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading
+  </p>
+  <ol
+    className="gif-cards"
+  />
+</div>
+`;
+
+exports[`test for GifGrid should show items when images are loaded 1`] = `
+<div
+  className="category"
+>
+  <h3>
+    The office
+  </h3>
+  <ol
+    className="gif-cards"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="FooBar"
+      url="https://foo/bar.gif"
+    />
+  </ol>
+</div>
+`;
